@@ -6,6 +6,6 @@ Demo used during the Visug XL session about "Implementing Domain Driven Design w
 
 You might also want to check out these repos since they are also being used here and contain essential functionality.
 
-https://github.com/PeterHimschoot/U2U.ValueObjectComparers
-https://github.com/PeterHimschoot/U2U.EntityFrameworkCore
+* https://github.com/PeterHimschoot/U2U.ValueObjectComparers
+* https://github.com/PeterHimschoot/U2U.EntityFrameworkCore
 
