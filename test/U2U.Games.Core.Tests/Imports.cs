@@ -1,0 +1,16 @@
+﻿global using Moq;
+global using System.Collections.Generic;
+global using System.ComponentModel.DataAnnotations;
+global using System.Globalization;
+global using System.Threading.Tasks;
+global using U2U.Currencies.Core.Entities;
+global using U2U.Currencies.Core.Services;
+global using U2U.Currencies.Core.ValueObjects;
+global using U2U.Currencies.FakeData;
+global using U2U.EntityFrameworkCore.Abstractions;
+global using U2U.EntityFrameworkCore.Testing;
+global using U2U.Games.Core.Entities;
+global using U2U.Games.Core.Services;
+global using U2U.Games.Core.Specifications;
+global using U2U.Games.FakeData;
+global using Xunit;

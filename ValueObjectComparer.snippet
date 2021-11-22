@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Value Object Comparer</Title>
+    <Author>Peter Himschoot U2U</Author>
+    <Shortcut>voc</Shortcut>
+    <Description>Add Value Object Comparer</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>valueobject</ID>
+        <Default>ValueObjectClass</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[
+  public override bool Equals(object? obj) 
+    => ValueObjectComparer<$valueobject$>.Instance.Equals(this, obj);
+
+  public bool Equals($valueobject$? other)
+    => ValueObjectComparer<$valueobject$>.Instance.Equals(this, other);
+
+  public static bool operator ==($valueobject$ left, $valueobject$ right)
+  => ValueObjectComparer<$valueobject$>.Instance.Equals(left, right);
+
+  public static bool operator !=($valueobject$ left, $valueobject$ right)
+    => !(left == right);
+
+  public override int GetHashCode()
+  => ValueObjectComparer<$valueobject$>.Instance.GetHashCode(this);]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

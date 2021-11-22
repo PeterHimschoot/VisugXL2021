@@ -1,0 +1,32 @@
+﻿@using U2U.GameStore.Web.Controllers
+@using U2U.GameStore.Web.ViewModels.ShoppingBasket
+
+@model ShoppingBasketIndexViewModel
+
+@{
+  ViewData["Title"] = "Shopping Basket";
+}
+
+<h1>Shopping Basket</h1>
+
+<div class="gamelist">
+  @await foreach (var (game, localizedPrice) in Model.Games)
+  {
+    <div class="game">
+      <a asp-controller="@ShoppingBasketController.ControllerName" asp-action="@nameof(ShoppingBasketController.AddToBasket)" asp-route-gameid="@game.Id">
+        <img class="image" src="@game.ImageURL" />
+      </a>
+      <div class="info">
+        <h3 class="name">@game.Name</h3>
+        <h4 class="price">Price: @localizedPrice</h4>
+      </div>
+    </div>
+  }
+</div>
+
+<div>
+  <a asp-controller="@GamesController.ControllerName" asp-action="@nameof(GamesController.Index)">Continue shopping</a>
+</div>
+<div>
+  <a asp-controller="@CheckoutController.ControllerName" asp-action="@nameof(CheckoutController.Create)">Proceed to checkout</a>
+</div>

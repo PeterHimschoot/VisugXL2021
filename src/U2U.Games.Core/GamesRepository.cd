@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="&lt;&lt;root&gt;&gt;">
+    <Position X="3.062" Y="1.587" Height="0.304" Width="1.346" />
+  </Comment>
+  <Class Name="U2U.Games.Core.Entities.Game" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAQAAAAABDAAAAAUIABAAABgAAAAAAAAAgAA=</HashCode>
+      <FileName>Entities\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Image" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="U2U.Games.Core.Entities.GameImage" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Entities\GameImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

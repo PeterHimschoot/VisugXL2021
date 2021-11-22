@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<nullable>enable</nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>10.0</LangVersion>
+		<UserSecretsId>D9FBE7D4-DECC-4546-9DEC-1CA5519660C8</UserSecretsId>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentAssertions" Version="6.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+		<PackageReference Include="U2U.EntityFrameworkCore.Testing" Version="0.7.0" />
+		<PackageReference Include="xunit" Version="2.4.2-pre.12" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="coverlet.collector" Version="3.1.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\U2U.Games.Core\U2U.Games.Core.csproj" />
+		<ProjectReference Include="..\..\src\U2U.Games.Infra\U2U.Games.Infra.csproj" />
+		<ProjectReference Include="..\U2U.Games.Web.E2E\U2U.Games.Web.E2E.csproj" />
+		<ProjectReference Include="..\U2U.Testing.Abstractions\U2U.Testing.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

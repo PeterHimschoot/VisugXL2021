@@ -9,3 +9,8 @@ You might also want to check out these repos since they are also being used here
 * https://github.com/PeterHimschoot/U2U.ValueObjectComparers
 * https://github.com/PeterHimschoot/U2U.EntityFrameworkCore
 
+This demo has been built for .NET 6 using SDK 6.0.100, check global.sjon
+
+You will also need to generate the databases
+Run dotnet ef database update from the 2 Infra project folders.
+

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="U2U.Games.Core.Entities.Game">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAQAAAAABDAAAAAUIABAAABgAAAAAAAAAgAA=</HashCode>
+      <FileName>Entities\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Price" />
+      <Property Name="Image" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="U2U.Currencies.Core.ValueObjects.Money">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="U2U.Games.Core.Entities.GameImage">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Entities\GameImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Fira Code Retina" Size="7" />
+</ClassDiagram>

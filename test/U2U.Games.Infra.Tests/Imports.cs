@@ -1,0 +1,12 @@
+﻿global using FluentAssertions;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.DependencyInjection;
+global using Moq;
+global using U2U.Currencies.Core.ValueObjects;
+global using U2U.EntityFrameworkCore;
+global using U2U.EntityFrameworkCore.Abstractions;
+global using U2U.EntityFrameworkCore.Testing;
+global using U2U.Games.Core.Entities;
+global using U2U.Games.Core.Specifications;
+global using U2U.Games.FakeData;
+global using Xunit;
